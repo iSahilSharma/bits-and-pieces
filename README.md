@@ -1,8 +1,6 @@
-# Useful Programming Commands
+# Useful Commands
 
 ### Docker
-
-Docker Commands - 
 
 Docker Build:
 It is used to build the docker images
