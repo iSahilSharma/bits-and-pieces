@@ -60,5 +60,20 @@ To inspect the docker node:
 *docker node inspect self"*
 *docker node inspect "node-id"*
 
-To create a container in docker-swarm mode:
+To create a container(service) in docker-swarm mode:
 *docker service create --name "service-name" -p "8080:80" nginx*
+
+To remove a container(service) in docker-swarm mode:
+*docker service rm "service-name"*
+
+To view specific container(service) in docker-swarm mode:
+*docker service ps "service-name"*
+
+To view all containers(services) in docker-swarm mode:
+*docker service ls*
+
+To update the container(service) in docker-swarm mode:
+*docker service update --replicas=2 "service-name"*
+
+To scale the container(service) in docker-swarm mode:
+*docker service scale "service-name"="number"*
