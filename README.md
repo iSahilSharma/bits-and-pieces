@@ -3,8 +3,7 @@
 To build a docker image:
 ```
 docker image build -tag "specify a tag name as image:v1" --no-cache . 
-```
-```
+
 docker build -t "specify a tag name as image:v1" -f "specify docker file as Dockerfile.debug" 
 ```
  
