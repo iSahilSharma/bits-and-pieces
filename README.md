@@ -2,10 +2,10 @@
  
 To build the docker images:
 ``` 
-docker image build -tag "specify a tag such as sampleimage:v1" --no-cache . 
+docker image build -tag "specify a tag name as image:v1" --no-cache . 
 ```
 ``` 
-docker build -t "specify a tag such as sampleimage:v1" -f "specify docker file such as Dockerfile.debug" 
+docker build -t "specify a tag name as image:v1" -f "specify docker file as Dockerfile.debug" 
 ```
  
 To run the docker container
