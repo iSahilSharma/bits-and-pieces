@@ -1,19 +1,23 @@
 # Docker
  
-To build the docker images:
-`
+To build a docker image:
+```
 docker image build -tag "specify a tag name as image:v1" --no-cache . 
-`
-`
+```
+```
 docker build -t "specify a tag name as image:v1" -f "specify docker file as Dockerfile.debug" 
-`
+```
  
-To run the docker container
-*docker container run --detach --publish "8080:80" --name "sample-container" "image-name"*
-*docker run -d -p "8080:80" --name "sample-container" "image-name"*
+To run a docker container:
+```
+docker container run --detach --publish "8080:80" --name "sample-container" "image-name"
+```
+```
+docker run -d -p "8080:80" --name "sample-container" "image-name"
+```
 
-To see the details about docker engine installed in the machine.
-*docker info*
+To check the details about Docker Engine installed on the machine.
+```docker info```
 
 To show the statistics of containers like the task manager
 *docker stats*
