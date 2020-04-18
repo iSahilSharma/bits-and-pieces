@@ -2,43 +2,52 @@
 
 ### Docker
 
-Docker Build:
-It is used to build the docker images
+Docker - 
+To build the docker images
  *docker build -t "specify a tag such as sampleimage:v1" -f "specify docker file such as Dockerfile.debug"*
 
-Docker Run:
-It is used to run the docker container
+To run the docker container
 *docker run -d -p "8080:80" --name "sample-container"*
 
-Docker Info:
-It is used to see the details about docker engine installed in the machine.
+To see the details about docker engine installed in the machine.
 *docker info*
 
-Docker Stats:
-It is used to show the statistics of containers like the task manager
+To show the statistics of containers like the task manager
 *docker stats*
 
-Docker rm:
-It is used to remove containers from docker engine.
+To remove containers from docker engine.
 *docker rm -f "container name or id"*
 
-Docker rmi:
-It is used to remove images from docker engine.
+To remove images from docker engine.
 *docker rmi -f "image name or id"*
 
-Docker ps:
-It is used to see all the containers.
+To see all the containers.
+*docker container ls -a"*
 *docker ps -a"*
 
-Docker images:
-It is used to see all the images.
+To see all the images.
+*docker image ls -a"*
 *docker images -a"*
 
-Docker prune:
-It is used to remove the unsed container and images.
+To remove the unsed container and images.
 *docker system prune -f -a"*
 
-Docker network:
-It is used to create or inspect a network.
+To create or inspect a network.
 *docker network create "network-name"*
 *docker network inspect "network-name"*
+
+
+Docker Compose -
+To execute the docker compose files.
+*docker-compose build*
+*docker-compose up*
+*docker-compose down*
+*docker-compose -f docker-compose.yml up -d*
+*docker-compose -f docker-compose.yml down*
+
+Docker Swarn:
+To see if the swarn is enabled or not:
+*docker info*
+Execute it and see the swarn key-value pair, either it is active or inactive.
+
+To enable the swarn mode:
