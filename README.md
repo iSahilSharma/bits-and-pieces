@@ -60,44 +60,71 @@ docker network create "network-name"
 docker network inspect "network-name"
 ```
 
+# Docker Compose
+ 
+To execute the docker compose files:
+```
+docker-compose build
 
-Docker Compose -
-To execute the docker compose files.
-*docker-compose build*
-*docker-compose up*
-*docker-compose down*
-*docker-compose -f docker-compose.yml up -d*
-*docker-compose -f docker-compose.yml down*
+docker-compose up
 
-Docker Swarm:
-To see if docker swarm is enabled or not:
-*docker info*
-Execute it and see the swarm key-value pair, either it is active or inactive.
+docker-compose down
+
+docker-compose -f docker-compose.yml up -d
+
+docker-compose -f docker-compose.yml down
+```
+
+# Docker Swarm
+
+To see if docker swarm is enabled or not. Execute it and see the swarm key-value pair, either it is active or inactive:
+```
+docker info
+```
 
 To enable the docker swarm mode:
-*docker swarm init --advertise-addr 192.168.99.100"*
+```
+docker swarm init --advertise-addr 192.168.99.100"
+```
 
 To see the docker nodes:
-*docker node ls"*
+```
+docker node ls"
+```
 
 To inspect the docker node:
-*docker node inspect self"*
-*docker node inspect "node-id"*
+```
+docker node inspect self"
+
+docker node inspect "node-id"
+```
 
 To create a container(service) in docker-swarm mode:
-*docker service create --name "service-name" -p "8080:80" nginx*
+```
+docker service create --name "service-name" -p "8080:80" nginx
+```
 
 To remove a container(service) in docker-swarm mode:
-*docker service rm "service-name"*
+```
+docker service rm "service-name"
+```
 
 To view specific container(service) in docker-swarm mode:
-*docker service ps "service-name"*
+```
+docker service ps "service-name"
+```
 
 To view all containers(services) in docker-swarm mode:
-*docker service ls*
+```
+docker service ls
+```
 
 To update the container(service) in docker-swarm mode:
-*docker service update --replicas=2 "service-name"*
+```
+docker service update --replicas=2 "service-name"
+```
 
 To scale the container(service) in docker-swarm mode:
-*docker service scale "service-name"="number"*
+```
+docker service scale "service-name"="number"
+```
