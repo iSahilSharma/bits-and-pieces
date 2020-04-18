@@ -10,37 +10,55 @@ docker build -t "specify a tag name as image:v1" -f "specify docker file as Dock
 To run a docker container:
 ```
 docker container run --detach --publish "8080:80" --name "sample-container" "image-name"
-```
-```
+
 docker run -d -p "8080:80" --name "sample-container" "image-name"
 ```
 
-To check the details about Docker Engine installed on the machine.
-```docker info```
+To check the details about Docker Engine installed on the machine:
+```
+docker info
+```
 
-To show the statistics of containers like the task manager
-*docker stats*
+To check the statistics of containers:
+```
+docker stats
+```
 
-To remove containers from docker engine.
-*docker rm -f "container name or id"*
+To remove a container from docker engine:
+```
+docker rm -f "container name or id"
+```
 
-To remove images from docker engine.
-*docker rmi -f "image name or id"*
+To remove images from docker engine:
+```
+docker rmi -f "image name or id"
+```
 
-To see all the containers.
-*docker container ls -a"*
-*docker ps -a"*
+To see all the containers:
+```
+docker container ls -a"
 
-To see all the images.
-*docker image ls -a"*
-*docker images -a"*
+docker ps -a"
+```
 
-To remove the unsed container and images.
-*docker system prune -f -a"*
+To see all the images:
+```
+docker image ls -a"
 
-To create or inspect a network.
-*docker network create "network-name"*
-*docker network inspect "network-name"*
+docker images -a"
+```
+
+To remove all the unused container and images:
+```
+docker system prune -f -a"
+```
+
+To create or inspect a network:
+```
+docker network create "network-name"
+
+docker network inspect "network-name"
+```
 
 
 Docker Compose -
