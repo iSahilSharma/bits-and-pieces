@@ -45,9 +45,14 @@ To execute the docker compose files.
 *docker-compose -f docker-compose.yml up -d*
 *docker-compose -f docker-compose.yml down*
 
-Docker Swarn:
-To see if the swarn is enabled or not:
+Docker Swarm:
+To see if the swarm is enabled or not:
 *docker info*
-Execute it and see the swarn key-value pair, either it is active or inactive.
+Execute it and see the swarm key-value pair, either it is active or inactive.
 
-To enable the swarn mode:
+To enable the swarm mode:
+*docker swarm init --advertise-addr 192.168.99.100"*
+
+To see the docker swarm nodes:
+*docker node ls"*
+
