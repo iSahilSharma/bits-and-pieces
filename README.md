@@ -1,9 +1,12 @@
 # Docker
-
-Docker - 
-To build the docker images
-*docker image build -tag "specify a tag such as sampleimage:v1" --no-cache .*
- *docker build -t "specify a tag such as sampleimage:v1" -f "specify docker file such as Dockerfile.debug"*
+ 
+To build the docker images:
+``` 
+docker image build -tag "specify a tag such as sampleimage:v1" --no-cache . 
+```
+``` 
+docker build -t "specify a tag such as sampleimage:v1" -f "specify docker file such as Dockerfile.debug" 
+```
  
 To run the docker container
 *docker container run --detach --publish "8080:80" --name "sample-container" "image-name"*
