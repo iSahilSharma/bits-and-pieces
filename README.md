@@ -161,3 +161,8 @@ To scale the container(service) in docker-swarm mode:
 ```
 docker service scale "service-name"="number"
 ```
+
+To build the container(service) in docker-swarm mode using docker-stack file:
+```
+docker stack deploy -c docker-stack.yml "service-name"
+```
