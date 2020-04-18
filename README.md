@@ -60,19 +60,52 @@ docker network create "network-name"
 docker network inspect "network-name"
 ```
 
+To check the docker logs:
+```
+docker logs "container-name"
+```
+
 # Docker Compose
  
 To execute the docker compose files:
 ```
 docker-compose build
 
-docker-compose up
-
-docker-compose down
-
 docker-compose -f docker-compose.yml up -d
 
+docker-compose -f docker-compose.yml up -d --scale containername=5
+
 docker-compose -f docker-compose.yml down
+```
+
+To start the docker container:
+```
+docker-compose start "container-name" -d
+```
+
+To stop the docker container:
+```
+docker-compose stop "container-name"
+```
+
+To add the docker container:
+```
+docker-compose up "container-name" -d
+```
+
+To remove the docker container:
+```
+docker-compose down "container-name"
+```
+
+To check the docker logs:
+```
+docker-compose logs "container-name"
+```
+
+To check the docker processes:
+```
+docker-compose top "container-name"
 ```
 
 # Docker Swarm
