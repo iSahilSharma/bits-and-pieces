@@ -46,13 +46,19 @@ To execute the docker compose files.
 *docker-compose -f docker-compose.yml down*
 
 Docker Swarm:
-To see if the swarm is enabled or not:
+To see if docker swarm is enabled or not:
 *docker info*
 Execute it and see the swarm key-value pair, either it is active or inactive.
 
-To enable the swarm mode:
+To enable the docker swarm mode:
 *docker swarm init --advertise-addr 192.168.99.100"*
 
-To see the docker swarm nodes:
+To see the docker nodes:
 *docker node ls"*
 
+To inspect the docker node:
+*docker node inspect self"*
+*docker node inspect "node-id"*
+
+To create a container in docker-swarm mode:
+*docker service create --name "service-name" -p "8080:80" nginx*
