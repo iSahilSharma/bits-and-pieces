@@ -171,7 +171,7 @@ docker stack deploy -c docker-stack.yml "service-name"
 
 ## Method Safety and Method Idempotency:
 A method is considered safe when it doesn't change the resource representation. 
-A method is considered idempotent when it can be called multiple times with the same result.
+A method is considered idempotent when it can be called multiple times with the same result. In simple terms, a method is idempotent when performing certain operations cam be applied multiple times without changing the result.
 
 <table>
 <tr>
@@ -181,37 +181,37 @@ A method is considered idempotent when it can be called multiple times with the 
 </tr>
 <tr>
 <td>GET</td>
-<td>YES</td>
-<td>YES</td>
+<td>yes</td>
+<td>yes</td>
 </tr>
 <tr>
 <td>OPTIONS</td>
-<td>YES</td>
-<td>YES</td>
+<td>yes</td>
+<td>yes</td>
 </tr>
 <tr>
 <td>HEAD</td>
-<td>YES</td>
-<td>YES</td>
+<td>yes</td>
+<td>yes</td>
 </tr>
 <tr>
 <td>POST</td>
-<td>NO</td>
-<td>NO</td>
+<td>no</td>
+<td>no</td>
 </tr>
 <tr>
 <td>DELETE</td>
-<td>NO</td>
-<td>YES</td>
+<td>no</td>
+<td>yes</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td>NO</td>
-<td>YES</td>
+<td>no</td>
+<td>yes</td>
 </tr>
 <tr>
 <td>PATCH</td>
-<td>NO</td>
-<td>NO</td>
+<td>no</td>
+<td>no</td>
 </tr>
 </table>
