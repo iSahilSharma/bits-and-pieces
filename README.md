@@ -12,11 +12,17 @@ To run a docker container:
 docker container run --detach --publish "8080:80" --name "sample-container" "image-name"
 
 docker run -d -p "8080:80" --name "sample-container" "image-name"
+
+docker run -it --rm -p 8080:80 "appname:version"
 ```
 
 To check the details about Docker Engine installed on the machine:
 ```
+docker version
+
 docker info
+
+where docker
 ```
 
 To check the statistics of containers:
