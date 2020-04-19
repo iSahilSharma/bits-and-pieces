@@ -166,3 +166,52 @@ To build the container(service) in docker-swarm mode using docker-stack file:
 ```
 docker stack deploy -c docker-stack.yml "service-name"
 ```
+
+# REST 
+
+## Method Safety and Method Idempotency:
+A method is considered safe when it doesn't change the resource representation. 
+A method is considered idempotent when it can be called multiple times with the same result.
+
+<table>
+<tr>
+<th>HTTP Method</th>
+<th>Safe</th>
+<th>Idempotent</th>
+</tr>
+<tr>
+<td>GET</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>OPTIONS</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>HEAD</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>NO</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>NO</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+</table>
