@@ -221,3 +221,11 @@ A method is considered idempotent when it can be called multiple times with the 
 <td>no</td>
 </tr>
 </table>
+
+# Software Architecture 
+
+## Three Layer Architecture:
+A
+
+## Clean Architecture:
+A
