@@ -44,6 +44,7 @@ To create or inspect a network:
 To check the docker logs:
     docker logs "container-name"
 
+# Docker Compose
 To execute the docker compose files:
     docker-compose build
     docker-compose -f docker-compose.yml up -d
@@ -82,6 +83,7 @@ To inspect the docker node:
     docker node inspect self"
     docker node inspect "node-id"
 
+# Docker Swarm
 To create a container(service) in docker-swarm mode:
     docker service create --name "service-name" -p "8080:80" nginx
 
