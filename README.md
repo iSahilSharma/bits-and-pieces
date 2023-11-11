@@ -1,5 +1,5 @@
 # Bits and pieces of everyday code
-Curated collection of everyday code snippets and solutions: a repository where you'll find the building blocks and handy fragments that make up the diverse landscape of coding. From time-saving tricks to essential functions, this repository is a treasure trove of bits and pieces that simplify your daily coding adventures. Explore a versatile collection of code fragments, essential snippets, Docker configurations, SQL commands, and handy helper methods curated to elevate the efficiency of your projects.
+> Curated collection of everyday code snippets and solutions: a repository where you'll find the building blocks and handy fragments that make up the diverse landscape of coding. From time-saving tricks to essential functions, this repository is a treasure trove of bits and pieces that simplify your daily coding adventures. Explore a versatile collection of code fragments, essential snippets, Docker configurations, SQL commands, and handy helper methods curated to elevate the efficiency of your projects.
 
 # Docker
  
